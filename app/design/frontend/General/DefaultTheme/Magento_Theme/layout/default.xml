@@ -13,9 +13,6 @@
         <remove src="fonts/opensans/bold/opensans-700.woff2"/>
     </head>
     <body>
-        <referenceContainer name="footer">
-            <block class="Magento\Framework\View\Element\Template" name="footer.extra.link" template="Magento_Theme::footer-extra-link.phtml"/>
-        </referenceContainer>
         <referenceContainer name="main">
             <container name="div.top" htmlTag="div" htmlClass="main-top" htmlId="homepage-main-top" before="-"/>
             <container name="div.content" htmlTag="div" htmlClass="main-content" htmlId="homepage-main-content" after="div.top">
@@ -38,3 +35,4 @@
         <referenceBlock name="sidebar.main.account_nav" remove="true" />
     </body>
 </page>
+

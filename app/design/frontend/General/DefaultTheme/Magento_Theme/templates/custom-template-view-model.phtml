@@ -1,0 +1,17 @@
+<?php
+/** @var $block Magento\Framework\View\Element\Template */
+/** @var $viewModel Mageplaza\HelloWorld\ViewModel\MyNewViewModel */
+$viewModel = $block->getViewModel();
+$array = $viewModel->deserialize('{"name":"John", "age":30, "city":"New York"}');
+?>
+
+<?php if ($viewModel->customerLoggedIn()): ?>
+    <h3><?= $viewModel->getTitle()?></h3>
+    <p><?= $array['name'] ?></p>
+    <p><?= $array['age'] ?></p>
+    <p><?= $array['city']?></p>
+<?php else: ?>
+    <h3>Not logged in</h3>
+<?php endif; ?>
+
+

@@ -13,6 +13,7 @@
                     <argument name="view_model" xsi:type="object">Mageplaza\HelloWorld\ViewModel\MyNewViewModel</argument>
                 </arguments>
             </block>
+            <block class="Magento\Framework\View\Element\Template" name="mag14.php" template="Magento_Theme::mag14-php.phtml"/>
         <referenceContainer name="footer">
             <block class="Magento\Framework\View\Element\Template" name="footer.extra.link" template="Magento_Theme::footer-extra-link.phtml"/>
         </referenceContainer>
